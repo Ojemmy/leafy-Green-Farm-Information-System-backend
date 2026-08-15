@@ -13,7 +13,7 @@ const adminRoutes = require('./routes/admin');
 
 const app = express();
 app.use(express.json({ limit: '10mb' }));
-const clientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
+const clientUrl = process.env.CLIENT_URL || 'https://leafy-green-farm-information-system.vercel.app/';
 const allowedOrigins = clientUrl.split(',').map(url => url.trim());
 
 app.use(cors({
